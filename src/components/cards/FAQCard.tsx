@@ -23,12 +23,12 @@ const FAQCard = ({ text, title, isActive, handleToggle }: IFAQCard): JSX.Element
                 <p className={`text-blue02 ${isActive ? "flex" : "hidden"}`}>{text}</p>
             </div>
             <img
-                src={`${process.env.NODE_ENV === "production" ? process.env.NEXT_PUBLIC_BASE_PATH : ""}/icons/${isActive ? "chevron-circle-down.svg" : "chevron-circle-right.svg"}`}
+                src={`lokaly.github.io/icons/${isActive ? "chevron-circle-down.svg" : "chevron-circle-right.svg"}`}
                 className={`w-12 md:w-auto cursor-pointer absolute right-0 md:relative hidden md:flex ${isRotating ? "rotate" : ""}`}
                 alt="Chevron Icon"
             />
             <img
-                src={`${process.env.NODE_ENV === "production" ? process.env.NEXT_PUBLIC_BASE_PATH : ""}/icons/chevron-circle-right.svg`}
+                src={`lokaly.github.io/icons/chevron-circle-right.svg`}
                 className={`w-12 md:w-auto cursor-pointer absolute right-0 mr-8 md:relative md:hidden ${isActive && "md:hidden"} ${isRotating ? "rotate-respons" : ""}`}
                 alt="Chevron Icon"
             />

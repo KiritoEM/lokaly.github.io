@@ -3,7 +3,7 @@
 const isProd = (process.env.NODE_ENV = "production");
 
 const nextConfig = {
-  basePath: isProd ? "/lokaly-website-deployement" : "",
+  basePath: isProd ? "/lokaly.github.io" : "",
   reactStrictMode: true,
   output: "export",
   distDir: "dist",

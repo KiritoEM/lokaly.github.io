@@ -10,7 +10,7 @@ const LandingContact = (): JSX.Element => {
     const { ref, inView } = useInView({ threshold: 0.3 });
     const { verifyEmail } = emailServices()
     const { emailSent, emailState, loadingState } = userServiceContext()
-    const backgroundImageUrl = `${process.env.NODE_ENV === "production" ? process.env.NEXT_PUBLIC_BASE_PATH : ""}/contact-bg.svg`;
+    const backgroundImageUrl = `lokaly.github.io/contact-bg.svg`;
 
     useEffect(() => {
         if (inView) {
